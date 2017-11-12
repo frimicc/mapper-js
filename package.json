@@ -6,7 +6,6 @@
   "scripts": {
     "start": "babel-node src",
     "test": "eslint src && jest --coverage",
-    "precommit": "npm test",
     "prepush": "npm test"
   },
   "repository": {
