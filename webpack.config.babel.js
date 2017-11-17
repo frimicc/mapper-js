@@ -5,24 +5,24 @@ import { isProd } from './src/shared/util'
 
 export default {
   entry: [
-    './src/client'
+    './src/client',
   ],
   output: {
     filename: 'js/bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: isProd ? '/static/' : `https://www.friedman.polyvore.net:${WDS_PORT}/dist/`
+    publicPath: isProd ? '/static/' : `https://www.friedman.polyvore.net:${WDS_PORT}/dist/`,
   },
   module: {
     rules: [
-      { test: /\.(js|jsx)$/, use: 'babel-loader', exclude: /node_modules/ }
-    ]
+      { test: /\.(js|jsx)$/, use: 'babel-loader', exclude: /node_modules/ },
+    ],
   },
   devtool: isProd ? false : 'source-map',
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
   },
   devServer: {
-    port: WDS_PORT
-  }
+    port: WDS_PORT,
+  },
 }
 

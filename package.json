@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node src/server",
-    "test": "yarn lint && flow && jest --coverage",
+    "test": "npm run lint && jest --coverage",
     "prod:build": "rimraf lib dist && babel src -d lib --ignore .test.js && cross-env NODE_ENV=production webpack -p --progress",
     "prod:start": "cross-env NODE_ENV=production babel-node src/server",
     "prod:stop": "pm2 delete server",
     "lint": "eslint src webpack.config.babel.js --ext .js,.jsx",
-    "prepush": "npm test"
+    "prepush": "npm run test"
   },
   "repository": {
     "type": "git",
