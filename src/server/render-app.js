@@ -1,4 +1,4 @@
-import { APP_CONTAINER_CLASS, STATIC_PATH, WDS_PORT } from '../shared/config'
+import { APP_CONTAINER_CLASS, STATIC_PATH } from '../shared/config'
 import { isProd } from '../shared/util'
 
 const renderApp = title =>
@@ -10,7 +10,7 @@ const renderApp = title =>
     </head>
     <body>
       <div class="${APP_CONTAINER_CLASS}"></div>
-      <script src="${isProd ? STATIC_PATH : `https://mapper-js.herokuapp.com/dist`}/js/bundle.js"></script>
+      <script src="${isProd ? STATIC_PATH : 'https://mapper-js.herokuapp.com/dist'}/js/bundle.js"></script>
     </body>
   </html>
   `
