@@ -13,8 +13,8 @@
     "prepush": "npm run test"
   },
   "engines": {
-      "node": "8.9.x",
-      "npm": "5.5.1"
+    "node": "8.9.x",
+    "npm": "5.5.1"
   },
   "repository": {
     "type": "git",
@@ -42,6 +42,7 @@
     "babel-jest": "^21.2.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
     "cross-env": "^5.1.1",
     "eslint": "^4.11.0",
     "eslint-config-airbnb": "^16.1.0",
