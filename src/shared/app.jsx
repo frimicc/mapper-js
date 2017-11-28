@@ -6,7 +6,7 @@ const tile_data = ['tree', 'plain', 'water', 'tree']
 
 const App = () => <div>
   <h1>Hello Mapper</h1>
-  <p><TileMap num_cols=2 data={tile_data} /></p>
+  <p><TileMap num_cols='2' data={tile_data} /></p>
   </div>
 
 export default App
