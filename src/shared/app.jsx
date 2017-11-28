@@ -1,5 +1,5 @@
 import React from 'react'
-import Tile from 'components/tile'
+import Tile from './components/tile'
 
 const App = () => <div>
   <h1>Hello Mapper</h1>
