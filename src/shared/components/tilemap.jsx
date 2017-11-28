@@ -13,6 +13,7 @@ class TileMap extends React.Component {
     tiles.forEach((tile_type) => {
       if (curr_col < num_cols) {
         curr_row += <Tile type={tile_type} />
+        curr_col += 1
       } else {
         const row = curr_row
         rows.push(<p>{row}</p>)
