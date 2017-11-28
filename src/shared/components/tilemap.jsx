@@ -18,7 +18,7 @@ class TileMap extends React.Component {
         curr_row = ''
         curr_col = 0
       }
-    }
+    })
     
     return (
       <div>{rows}</div>
