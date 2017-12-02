@@ -15,7 +15,7 @@ class TileMap extends React.Component {
         curr_row += <Tile type={tile_type} />
         curr_col += 1
       } else {
-        const row = curr_row
+        const row = `curr_row`
         rows.push(<p>{row}</p>)
         curr_row = ''
         curr_col = 0
